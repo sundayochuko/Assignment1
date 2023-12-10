@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous Person Senior man Uche</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Include the navbar -->
+    <div id="navbar"></div>
+
+    <!-- <header></header> -->
+
+    <section class="home-page-section">
+      <h2>Biography of [Famous Person]</h2>
+      <p>This is the index page. It serves as a biography page.</p>
+      <img src="images/profileImg.jpeg" alt="Famous Person" />
+      <p>
+        <i> Quote: This is the index page. It serves as a biography page.</i>
+      </p>
+    </section>
+
+    <section class="home-page-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>25</td>
+            <td>New York</td>
+            <td>United Kindom</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>25</td>
+            <td>New York</td>
+            <td>United Kindom</td>
+          </tr>
+          <tr>
+            <td>Jane Doe</td>
+            <td>30</td>
+            <td>Los Angeles</td>
+            <td>Canada</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Include the footer -->
+    <div id="footer"></div>
+
+    <script>
+      // Fetch and include the navbar
+      fetch("components/navbar.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("navbar").innerHTML = data));
+
+      // Fetch and include the footer
+      fetch("components/footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+  </body>
+</html>
