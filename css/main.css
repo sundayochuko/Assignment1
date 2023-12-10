@@ -9,6 +9,9 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    background-image: url(../images/backgroundImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
@@ -183,6 +186,16 @@ iframe {
     iframe {
   height: 210px;
   width: 340px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(../images/whitebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 }
 
